@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
-    <title>スマートものづくり人材育成講座　実習補助ページ</title>
+    <title>スマートものづくり人材育成講座　実習補助ページ(2020年9月実施)</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
@@ -69,21 +69,33 @@
         実習資料のダウンロードをお願いします
         <ul>
             <li>
-                <a href="%E5%AE%9F%E7%BF%92%E3%83%86%E3%82%AD%E3%82%B9%E3%83%8820200108.pdf">実習テキスト</a>                                
+                <a href="%E5%AE%9F%E7%BF%92%E3%83%86%E3%82%AD%E3%82%B9%E3%83%8820200829.pdf">実習テキスト</a>                                
             </li>
             <li>
                 <a href="https://www.vstone.co.jp/products/scara_robot/download/SCARA_Robot_Manual.pdf">アカデミック スカラロボット 取扱説明書</a>
             </li>
         </ul>
-    
+        
+        加えて後述の手順に従い，下記のダウンロードとセットアップをお願いいたします．
+        <ol>
+          <li>WinPython 3.8ダウンロードとインストール</li>
+          <li>SCARA Programmerのダウンロード</li>
+          <li>実習用ロボット・画像処理ソフトウェアアーカイブ</li>
+          <li>実習ロボット用ネットワーク制御用サーバ</li>
+          <li>実行サンプル</li>
+          <li>カメラセットアップ・チェッカー検出などのキャリブレーション向けソース</li>
+          <li>WinPythonへのOpenCV-pythonのインストール</li>
+        </ol>
+
         <hr>
 
-        以降の項目についてダウンロードならびにセットアップをお願いします
         <ul>
-            <li>1.<a href="https://sourceforge.net/projects/winpython/files/WinPython_3.7/3.7.4.1/">WinPython 3.7</a>ダウンロードとインストール<br/>
+            <li>1.<a href="https://sourceforge.net/projects/winpython/files/WinPython_3.8/3.8.5.0/">WinPython 3.8</a>ダウンロードとインストール<br/>
                 <ul>
                     <li>ダウンロード後にインストーラを起動し，任意のディレクトリに解凍／インストールしてください（３０分から１時間程度かかります）</li>
                     <li>解凍／インストールしたディレクトリに当日アクセスしますので，忘れないよう願います</li>
+                    <li>遷移先のページで「Download Latest Version」をクリックしてダウンロードしてください</li>
+                    <img src="winpython.png">
                   </ul>
             </li>
         </ul>
@@ -94,7 +106,7 @@
             <li>2.<a href="https://www.vstone.co.jp/products/scara_robot/download.html#02-2">SCARA Programmerのダウンロードページ</a>からZip版のダウンロードと起動を事前に実施してください．<br/>
                 
                 <ul>
-                    <li>ダウンロード後に必ずSCARA Programmerの起動を行ってください</li>
+                    <li><p class="font-weight-bold">ダウンロード後に必ずSCARA Programmerの起動を行ってください</p></li>
                     <li>SCARA Programmerを起動した際，「d3dx9_43.dll/d3dx9_32.dllがない」と表示されてアプリケーションが起動しない場合，<a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109">こちら</a>からMicrosoft DirectXの該当プログラムのダウンロードとインストールを実施してください．</li>
                     <br/>
                     <img src="dx.png">
@@ -134,7 +146,7 @@
         </ul>
         <hr>
         <ul>
-            <li>7.WinPythonへのOpenCV-pythonのインストール<br/>
+            <li>8.WinPythonへのOpenCV-pythonのインストール<br/>
                 （インターネットへのアクセスが必須の作業になりますので，事前に必ず実行願います）
             </li>
             
