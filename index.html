@@ -68,129 +68,90 @@
         <hr/>
         実習資料のダウンロードをお願いします
         <ul>
-            <li>
-                <!-- <a href="%E5%AE%9F%E7%BF%92%E3%83%86%E3%82%AD%E3%82%B9%E3%83%8820200831.pdf" target="_blank">実習テキスト</a>       -->
-                <a href="%E5%AE%9F%E7%BF%92%E3%83%86%E3%82%AD%E3%82%B9%E3%83%8820210124.pdf" target="_blank">実習テキスト</a>                             
-            </li>
-            <li>
-                <a href="https://www.vstone.co.jp/products/scara_robot/download/SCARA_Robot_Manual.pdf" target="_blank">アカデミック スカラロボット 取扱説明書</a>
-            </li>
+          <li>
+              <a href="%E5%AE%9F%E7%BF%92%E3%83%86%E3%82%AD%E3%82%B9%E3%83%8820200831.pdf" target="_blank">実習テキスト</a>
+          </li>
+          <li>
+              <a href="%E5%AE%9F%E7%BF%92%E3%83%86%E3%82%AD%E3%82%B9%E3%83%8820210124.pdf" target="_blank">実習テキスト（ロボット設置方法も併記版）</a>
+          </li>
+          <li>
+              <a href="https://www.vstone.co.jp/products/scara_robot/download/SCARA_Robot_Manual.pdf" target="_blank">アカデミック スカラロボット 取扱説明書</a>
+          </li>
         </ul>
         
         加えて後述の手順に従い，下記のダウンロードとセットアップをお願いいたします．
         <ol>
-          <li>WinPython 3.8ダウンロードとインストール</li>
-          <li>SCARA Programmerのダウンロード</li>
-          <li>実習用ロボット・画像処理ソフトウェアアーカイブ</li>
-          <li>実習ロボット用ネットワーク制御用サーバ</li>
-          <li>実行サンプル</li>
-          <li>カメラセットアップ・チェッカー検出などのキャリブレーション向けソース</li>
-          <li>WinPythonへのOpenCV-pythonのインストール</li>
+          <li><a href="#p1">WinPython 3.8ダウンロードとインストール</a></li>
+          <li><a href="#p2">実習用ロボット・画像処理ソフトウェアアーカイブのダウンロードと展開</a></li>
+          <li><a href="#p3">WinPythonへのOpenCV-pythonのインストール</a></li>
+          <li><a href="#p4">SCARA Programmerの起動</a></li>
+          <li><a href="#p5">（オプション）USBドライバのインストール</a></li>
         </ol>
 
         <hr>
 
+        <a name="p1"></a>
+        <h2>WinPythonのインストール</h2>
         <ul>
-            <li>1.<a href="https://sourceforge.net/projects/winpython/files/WinPython_3.8/3.8.5.0/" target="_blank">WinPython 3.8</a>ダウンロードとインストール<br/>
-                <ul>
-                    <li>ダウンロード後にインストーラを起動し，任意のディレクトリに解凍／インストールしてください（３０分から１時間程度かかります）</li>
-                    <li>解凍／インストールしたディレクトリに当日アクセスしますので，忘れないよう願います</li>
-                    <li>遷移先のページで「Download Latest Version」をクリックしてダウンロードしてください</li>
-                    <img src="winpython.png">
-                  </ul>
-            </li>
+          <li><a href="https://sourceforge.net/projects/winpython/files/WinPython_3.8/3.8.5.0/" target="_blank">WinPython 3.8のダウンロードページ</a>に移動してダウンロードを行います（最新版でOK）</li>
+          <li>ダウンロード後にインストーラを起動し，任意のディレクトリに解凍／インストールしてください（３０分から１時間程度かかります）</li>
+          <li>解凍／インストールしたディレクトリに当日アクセスしますので，忘れないよう願います</li>
+          <li>遷移先のページで「Download Latest Version」をクリックしてダウンロードしてください</li>
+          <img src="winpython.png">
+        </ul>
+
+        <hr>
+        
+        <a name="p2"></a>
+        <h2>実習用ロボット・画像処理ソフトウェアアーカイブのダウンロードと展開</h2>
+        <ul>
+          <li><a href="https://public-documents.oss-ap-northeast-1.aliyuncs.com/20210126_online.zip">実習用ロボット・画像処理ソフトウェアアーカイブ</a><br/>上記アーカイブについてダウンロードとWinPythonのNotebookディレクトリへの展開をお願いします</li>  
+          <li>ダウンロード後，「WinPython 3.8ダウンロードとインストール」の手順で WinPython をインストールしたディレクトリに移動します</li>
+          <li>ダウンロードしたZipファイルを「notebooks」ディレクトリに展開します</li>
+          <img src="notebooks.jpg"> 
+        </ul>
+        
+        
+        <hr>
+        
+        <a name="p3"></a>
+        <h2>WinPythonへのOpenCV-pythonのインストール</h2>
+        <ul>
+          <li>下記の手順に従い，WinPythonへのOpenCV-pythonのインストールを行ってください<br/>
+              （インターネットへのアクセスが必須の作業になりますので，事前に必ず実行願います）
+          </li>
+          <img src="opencv-python.jpg">
+        </ul>
+        
+        
+        <a name="p4"></a>
+        <h2>SCARA Programmerの起動</h2>
+        <ul>
+          <li>「実習用ロボット・画像処理ソフトウェアアーカイブ」としてダウンロードして展開したディレクトリを開きます</li>
+          <li>「WPy64-XXXX/notebooks/VSTONEロボット」内にSCARA Programmerの実行ファイルアーカイブである「SCARA_Programmer_Inst_003.zip」が入っているので任意の場所に展開します</li>   
+          <img src="notebooks.jpg"> 
+
+          <li>展開したディレクトリ内に「SCARAProgrammer.exe」が入っているので起動します．起動後下記の画面が表示されていればセットアップは完了です．</li>   
+          <img src="scaraprogrammer.jpg" width="50%" height="50%"> 
+
+          <li>SCARA Programmerを起動した際，「d3dx9_43.dll/d3dx9_32.dllがない」と表示され，アプリケーションが起動しない場合は，<a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109" target="_blank">こちら</a>からMicrosoft DirectXの該当プログラムのダウンロードとインストールを実施してください．</li>
+          
+          <img src="directx.png"> 
         </ul>
     
-        <hr>
-        
-        <ul>
-            <li>2.<a href="https://www.vstone.co.jp/products/scara_robot/download.html#02-2" target="_blank">SCARA Programmerのダウンロードページ</a>からZip版のダウンロードと起動を事前に実施してください．<br/>
-                
-                <ul>
-                    <li><p class="font-weight-bold">ダウンロード後に必ずSCARA Programmerの起動を行ってください</p></li>
-                    <li>SCARA Programmerを起動した際，「d3dx9_43.dll/d3dx9_32.dllがない」と表示され，アプリケーションが起動しない場合は，<a href="https://www.microsoft.com/en-us/download/details.aspx?id=8109" target="_blank">こちら</a>からMicrosoft DirectXの該当プログラムのダウンロードとインストールを実施してください．</li>
-                    <br/>
-                    <img src="directx.png">        
-                </ul>
-            </li>
-        </ul>
-        
-        <hr>
-        
-        <ul>
-            <li>3.ロボットとPCを接続する際に必要な「CP2110/4 HID USB-to-UART インターフェースライブラリ」をダウンロードの上，インストールを済ませてください．<br/><a href="https://jp.silabs.com/products/development-tools/interface/cp2110ek-evaluation-kit" target="_blank">CP2110/4 HID USB-to-UART インターフェースライブラリ(Sillicon Lab社のページへ)</a></li>  
-            <br/>
-            <img src="cp2110.png">            
-        </ul>
-        
-        <hr>
-        
-        <ul>
-            <li>4.<a href="https://public-documents.oss-ap-northeast-1.aliyuncs.com/noastec-sier2019/Instruction2020.zip">実習用ロボット・画像処理ソフトウェアアーカイブ</a><br/>上記アーカイブについてダウンロードをお願いします．※セットアップ等については実習当日に行います</li>  
-        </ul>
         
         <hr>
 
+        <a name="p5"></a>
+        <h2>（オプション）USBドライバのインストール</h2>
         <ul>
-            <li>5.<a href="https://public-documents.oss-ap-northeast-1.aliyuncs.com/noastec-sier2019/VSTONE%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E3%81%AE%E5%88%B6%E5%BE%A1%E3%82%B5%E3%83%BC%E3%83%90.zip">実習ロボット用ネットワーク制御用サーバ</a><br/>上記アーカイブについてダウンロードをお願いします．※セットアップ等については実習当日に行います</li>  
-            
+          <li>（SCARA Programmer起動後にロボットと通信できない場合．古いWindows10などのための情報）</li>
+          <li>「WPy64-XXXX/notebooks/VSTONEロボット」内にUSBドライバのインストーラである「CP2110_4_Windows.exe」が入っているので実行してインストールを行ってください</li>   
+          <li>それでもロボットと通信できない場合，ロボットとPCを接続する際に必要な「CP2110/4 HID USB-to-UART インターフェースライブラリ」をダウンロードの上，インストールを済ませてください．<br/><a href="https://jp.silabs.com/products/development-tools/interface/cp2110ek-evaluation-kit" target="_blank">CP2110/4 HID USB-to-UART インターフェースライブラリ(Sillicon Lab社のページへ)</a></li>  
+          <img src="cp2110.png">   
         </ul>
         
-        <hr>
         
-        <ul>
-                <li>6.<a href="20191105.ipynb">実行サンプル</a>※右クリックから保存してください</li>  
-        </ul>
-        <hr>
-        <ul>
-                <li>7.<a href="setup.ipynb">カメラセットアップ・チェッカー検出などのキャリブレーション向けソース</a>※右クリックから保存してください</li>  
-        </ul>
-        <hr>
-        <ul>
-            <li>8.WinPythonへのOpenCV-pythonのインストール<br/>
-                （インターネットへのアクセスが必須の作業になりますので，事前に必ず実行願います）
-            </li>
-            
-            <img src="https://public-documents.oss-ap-northeast-1.aliyuncs.com/noastec-sier2019/opencv-python.jpg">
-            
-        </ul>
-        
-        <!--
-        <ul>
-            <li>（参考）<a href="https://github.com/nc30mtd/dht11-for-rpizero-service">DHT11用計測アプリケーション（Raspberry Pi Zero上で動いているアプリケーション）</a></li>  
-            
-        </ul>
-        <hr>
-        <ul>
-                <li>（参考）Windows向けSSHクライアントの例</li>  
-                
-                <li><a href="https://ja.osdn.net/projects/ttssh2/">Teraterm</a></li>  
-                <li><a href="https://ja.osdn.net/projects/sfnet_poderosa/">poderosa</a></li>
-            </ul>
-        <hr>
-        -->
-    
-        <!--
-        <h2 id="compiled-css-and-js">AI実習</h2>
-        実習で利用する下記のファイルをダウンロードの上，後述の手順の通りセットアップを済ませてください．
-        <ul>
-            <li><a href="https://public-documents.oss-ap-northeast-1.aliyuncs.com/2019-08-23%20AI.zip">AI実習用教材(2019-08-23 AI.zip)</a></li>
-            <li><a href="https://sourceforge.net/projects/winpython/files/WinPython_3.7/3.7.4.0/Winpython64-3.7.4.0.exe/download">WinPython</a></li>    
-        </ul>
-        
-        <h3>WinPython のインストール</h3>
-        <ol>
-        <li>"Winpython64-3.7.4.0.exe" をダブルクリックする</li>
-        <li>"Extract to:" のところを "C:\" とする</li>
-        <li>"Extract" を押す</li>
-        </ol>
-        <h3>AI データの配置手順</h3>
-        
-        <ol>
-            <li>"2019-08-23 AI.zip" を展開する（通常は右クリックから「すべて展開」で可能）</li>
-            <li>展開された "notebooks" フォルダの中のファイルをすべて "C:\WPy64-3740\notebooks" フォルダにコピーする</li>
-        </ol>
-        -->
         </main>
     <!-- /.container -->
 
